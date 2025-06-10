@@ -31,3 +31,10 @@
     order: unset;
   }
 }
+
+.columns .contact-details img {
+    max-width: 20px;
+    height: auto;
+    display: inline-block;
+    margin-right: 20px;
+}

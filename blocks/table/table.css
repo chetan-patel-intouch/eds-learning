@@ -65,18 +65,3 @@
 .table.bordered table td {
   border: 1px solid #dadada;
 }
-.contact-details {
-    background: red;
-}
-.contact-details div {
-    display: flex;
-    gap: 24px;
-    align-items: center;
-}
-
-.contact-details img {
-    max-width: 20px;
-    height: auto;
-    display: inline-block;
-    margin-right: 20px;
-}
