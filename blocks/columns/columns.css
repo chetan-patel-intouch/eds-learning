@@ -53,25 +53,24 @@
   margin-bottom: 8px;
   align-items: baseline;
 }
-.columns.contact-details div:nth-child(2) h4:not(a):hover {
+.columns.contact-details div:nth-child(2) h4:hover {
     animation: glow 1.5s infinite alternate;
 }
 .columns.contact-details div:nth-child(2) a {
   position: relative;
 }
-.columns.contact-details div:nth-child(2) #webdevchetanpatelgmailcom a:hover:after{
-  content: '← Email Me!'
-}
-.columns.contact-details div:nth-child(2) #landline--mobile a:hover:after{
-  content: '← Call Me!'
-}
+
 .columns.contact-details div:nth-child(2) a:hover:after {
+  content: '← Email Me!';  
   position: absolute;
-  right: -120px;
+  right: -180px;
   animation: bounce 0.5s;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
   animation-iteration-count: infinite;
+}
+.columns.contact-details div:nth-child(2) #landline--mobile a:hover:after {
+  content: '← Call Me!'; 
 }
 @keyframes bounce {
   from {
