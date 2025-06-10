@@ -32,7 +32,7 @@
   }
 }
 
-.columns .contact-details img {
+.columns.contact-details img {
     max-width: 20px;
     height: auto;
     display: inline-block;
