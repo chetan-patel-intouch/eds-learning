@@ -65,7 +65,9 @@
 .table.bordered table td {
   border: 1px solid #dadada;
 }
-
+.contact-details {
+    background: red;
+}
 .contact-details div {
     display: flex;
     gap: 24px;
