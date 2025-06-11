@@ -36,6 +36,16 @@
       min-height: calc(100vh - var(--nav-height));
       display: flex;
       align-items: center;
+      justify-content: center;
+    }
+    main.error .error-message {
+      display: flex;
+      justify-content: center;
+    }
+
+    main.error .button-container {
+      display: flex;
+      justify-content: space-between;
     }
 
     main.error .error-number {
@@ -54,7 +64,7 @@
   <main class="error">
     <div class="section">
       <svg viewBox="1 0 38 18" class="error-number">
-        <text x="0" y="17">404</text>
+        <text x="4" y="17">404</text>
       </svg>
       <h2 class="error-message">Page Not Found</h2>
       <p class="button-container">
