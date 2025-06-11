@@ -33,19 +33,11 @@
   <link rel="stylesheet" href="/styles/styles.css">
   <style>
     main.error {
-      background: 50% 0 url('/images/404-banner.jpg') no-repeat;
+      background: 50% 100% url('/images/404-banner.jpg') no-repeat;
+      background-size: contain;
       min-height: calc(100vh - var(--nav-height));
       display: flex;
-      align-items: center;
       justify-content: center;
-    }
-    main.error .section:first-of-type {
-      margin-top: 80px;
-    }
-    @media (width >= 767px) {
-        main.error .section:first-of-type {
-          margin-top: 0;
-        }
     }
 
     main.error .error-number {
