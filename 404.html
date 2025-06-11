@@ -33,19 +33,19 @@
   <link rel="stylesheet" href="/styles/styles.css">
   <style>
     main.error {
+      background: 50% 0 url('/images/404-banner.jpg') no-repeat;
       min-height: calc(100vh - var(--nav-height));
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    main.error .error-message {
-      display: flex;
-      justify-content: center;
+    main.error .section:first-of-type {
+      margin-top: 80px;
     }
-
-    main.error .button-container {
-      display: flex;
-      justify-content: space-between;
+    @media (width >= 767px) {
+        main.error .section:first-of-type {
+          margin-top: 0;
+        }
     }
 
     main.error .error-number {
@@ -63,9 +63,6 @@
   <header></header>
   <main class="error">
     <div class="section">
-      <svg viewBox="1 0 38 18" class="error-number">
-        <text x="4" y="17">404</text>
-      </svg>
       <h2 class="error-message">Page Not Found</h2>
       <p class="button-container">
         <a href="/" class="button secondary error-button-home">Go home</a>
