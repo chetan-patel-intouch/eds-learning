@@ -9,7 +9,27 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-
+.rolly{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:16px;
+  height:16px;
+  font-family:Arial,sans-serif;
+  font-size:16px;
+  text-align:center;
+  font-weight:bold;
+}
+.polly{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:10px;
+  height:10px;
+  font-family:Arial,sans-serif;
+  font-size:10px;
+  text-align:center;
+}
 :root {
   /* colors */
   --background-color: white;

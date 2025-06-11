@@ -63,7 +63,7 @@
 .columns.contact-details div:nth-child(2) a:hover:after {
   content: '← Email Me!';  
   position: absolute;
-  right: -180px;
+  right: -140px;
   animation: bounce 0.5s;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
