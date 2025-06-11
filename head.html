@@ -71,7 +71,7 @@ if (document.getElementById && !document.layers) {
 
     var algn = new Array();
     for (var i = 0; i < D.length; i++) {
-        algn[i] = (parseInt(D[i]) || D[i] == 0) ? 12:11;
+        algn[i] = (parseInt(D[i]) || D[i] == 0) ? 10:9;
         document.write('<div id="_date' + i + '" class="polly" style="font-size:' + algn[i] + 'px;color:' + dCol + '">' + D[i] + '<\/div>');
         tmpd[i] = document.getElementById("_date" + i).style;
     }
