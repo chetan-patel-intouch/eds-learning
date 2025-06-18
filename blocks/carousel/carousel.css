@@ -29,7 +29,7 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  min-height: min(50vw, calc(100dvh - var(--header-height)));
+  min-height: min(60vw, 60vh);
 }
 
 .carousel .carousel-slide:has(.carousel-slide-content[data-align='center']) {
@@ -49,6 +49,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  object-position: bottom;
 }
 
 .carousel .carousel-slide .carousel-slide-content {
@@ -143,8 +144,7 @@
 
   .carousel .carousel-slide .carousel-slide-content {
     --slide-content-width: calc((100% - 184px) / 2);
-
-    margin: 92px;
+    margin: 78px;
   }
 
   .carousel .carousel-slide .carousel-slide-content[data-align='justify'] {
