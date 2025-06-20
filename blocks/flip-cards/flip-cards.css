@@ -1,7 +1,7 @@
 .flip-cards-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 4rem;
   justify-content: center;
   padding: 2rem 0;
 }
