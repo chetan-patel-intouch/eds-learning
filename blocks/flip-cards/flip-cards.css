@@ -8,6 +8,9 @@
 [data-flip-cards="start"] .flip-cards-wrapper {
   justify-content: flex-start;
 }
+[data-flip-cards="space-between"] .flip-cards-wrapper {
+  justify-content: space-between;
+}
 [data-flip-cards="end"] .flip-cards-wrapper {
   justify-content: flex-end;
 }
