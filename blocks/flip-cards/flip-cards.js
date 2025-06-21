@@ -24,6 +24,9 @@ export default function decorate(block) {
     const front = document.createElement('div');
     front.className = 'flip-card-front';
 
+    const frontContent = document.createElement('div');
+    frontContent.className = 'flip-card-front-content';
+
     const picture = cells[0]?.querySelector('picture');
     const frontText = cells[1]?.innerHTML.trim();
 
@@ -34,25 +37,29 @@ export default function decorate(block) {
         false,
         [{ width: '750' }]
       );
-      front.append(optimized);
+      frontContent.append(optimized);
     }
 
     if (frontText) {
-      const p = document.createElement('p');
-      p.innerHTML = frontText;
-      front.append(p);
+      frontContent.innerHTML = frontText;
     }
 
     // ✅ Back of card
     const back = document.createElement('div');
     back.className = 'flip-card-back';
+
+    const backContent = document.createElement('div');
+    backContent.className = 'flip-card-back-content';
+
     const backText = cells[2]?.innerHTML.trim();
     if (backText) {
-      back.innerHTML = backText;
+      backContent.innerHTML = backText;
     }
 
     cardInner.append(front);
+    front.append(frontContent);
     cardInner.append(back);
+    back.append(backContent);
     card.append(cardInner);
     wrapper.append(card);
   });
