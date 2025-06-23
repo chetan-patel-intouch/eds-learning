@@ -62,3 +62,31 @@
 .accordion-item-label h4 {
   margin: 1rem 0;
 }
+/* Accordion Styles */
+.accordion-item {
+  overflow: hidden;
+  transition: height .3s ease;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.accordion-item-label {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 1em 0;
+  user-select: none;
+}
+
+.accordion-item summary::-webkit-details-marker {
+  display: none; /* Hide default triangle */
+}
+
+.accordion-item-body {
+  padding: 0.5em 0;
+  overflow: hidden;
+}
+
+/* Optional: style expanded summary differently */
+.accordion-item[open] .accordion-item-label {
+  color: #0077cc;
+}
