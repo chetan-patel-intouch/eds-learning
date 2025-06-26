@@ -1,7 +1,39 @@
 .html-sitemap ul {
   list-style: none;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
-.html-sitemap li {
-  margin: 0.5em 0;
+
+.html-sitemap > ul > li {
+  font-weight: bold;
+  margin: 1em 0 0.5em;
+  font-size: 20px;
+}
+
+.html-sitemap ul ul {
+  padding-left: 1.5em;
+  margin-top: 0.3em;
+}
+
+.html-sitemap ul ul li {
+  font-weight: normal;
+  margin: 0.3em 0;
+
+  &::before {
+    content: '→';
+    margin-right: 4px;
+    text-decoration: none;
+  }
+}
+
+.html-sitemap a {
+  color: var(--link-color, #0366d6);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.html-sitemap a:hover {
+  text-decoration: underline;
 }
